@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web bán điện thoại</title>
+    <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 20px;
+    }
+    .product-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+    .product-card {
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      width: 250px;
+      padding: 15px;
+      text-align: center;
+    }
+    .product-card img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+    .product-card h3 {
+      margin: 10px 0;
+    }
+    .product-card p.price {
+      color: #e53935;
+      font-weight: bold;
+      margin: 5px 0;
+    }
+    .product-card button {
+      padding: 8px 16px;
+      background-color: #28a745;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    .product-card button:hover {
+      background-color: #218838;
+    }
+  </style>
+</head>
+<body>
+    <h1 style="text-align: center;">Danh Sách Sản Phẩm Điện Thoại</h1>
+  <div class="product-grid">
+    
+    <div class="product-card">
+      <img src="./images/iphone15promax.jpeg" alt="Điện thoại 1">
+      <h3>iPhone 15 Pro Max</h3>
+      <p class="price">Giá: 35,000,000 VNĐ</p>
+      <button>Mua Ngay</button>
+    </div>
+    
+    <div class="product-card">
+      <img src="./images/samsungs24ultra.jpeg" alt="Điện thoại 2">
+      <h3>Samsung Galaxy S24 Ultra</h3>
+      <p class="price">Giá: 30,000,000 VNĐ</p>
+      <button>Mua Ngay</button>
+    </div>
+
+    <div class="product-card">
+      <img src="./images/xiaomi14pro.jpeg" alt="Điện thoại 3">
+      <h3>Xiaomi 14 Pro</h3>
+      <p class="price">Giá: 20,000,000 VNĐ</p>
+      <button>Mua Ngay</button>
+    </div>
+
+    <div class="product-card">
+      <img src="./images/oppofindx7.jpeg" alt="Điện thoại 4">
+      <h3>OPPO Find X7</h3>
+      <p class="price">Giá: 22,000,000 VNĐ</p>
+      <button>Mua Ngay</button>
+    </div>
+
+  </div>
+
+</body>
+</html>
