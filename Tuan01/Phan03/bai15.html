@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form thanh toán đơn hàng</title>
+    <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+      padding: 20px;
+    }
+    .checkout-form {
+      max-width: 600px;
+      margin: auto;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .checkout-form h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .checkout-form label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+    .checkout-form input[type="text"],
+    .checkout-form input[type="email"],
+    .checkout-form input[type="tel"],
+    .checkout-form textarea,
+    .checkout-form select {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 15px;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+    }
+    .checkout-form button {
+      width: 100%;
+      padding: 10px;
+      background-color: #2043e0;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    .checkout-form button:hover {
+      background-color: #1830e6;
+    }
+  </style>
+</head>
+<body>
+    <div class="checkout-form">
+    <h2>Thanh Toán Đơn Hàng</h2>
+    <form action="#" method="post">
+      
+      <label for="name">Họ và tên:</label>
+      <input type="text" id="name" name="name" placeholder="Nhập họ tên" required>
+      
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" placeholder="Nhập email" required>
+      
+      <label for="phone">Số điện thoại:</label>
+      <input type="tel" id="phone" name="phone" placeholder="Nhập số điện thoại" required>
+      
+      <label for="address">Địa chỉ giao hàng:</label>
+      <textarea id="address" name="address" rows="3" placeholder="Nhập địa chỉ giao hàng" required></textarea>
+      
+      <label for="payment-method">Hình thức thanh toán:</label>
+      <select id="payment-method" name="payment-method" required>
+        <option value="">--Chọn hình thức thanh toán--</option>
+        <option value="cod">Thanh toán khi nhận hàng (COD)</option>
+        <option value="bank">Chuyển khoản ngân hàng</option>
+        <option value="card">Thẻ tín dụng/ghi nợ</option>
+      </select>
+      
+      <button type="submit">Thanh Toán</button>
+      
+    </form>
+  </div>
+</body>
+</html>
