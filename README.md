@@ -12,3 +12,10 @@ Repository này chứa các bài thực hành của môn **Hệ Thống Công Ng
 - Các bài nâng cao: layout website, form đăng ký, form đăng nhập, trang bán hàng, trang tin tức, và các tính năng mở rộng khác.
 
 ---
+
+## 📝 Danh sách bài thực hành
+
+| STT | Tên bài thực hành                  | Mô tả ngắn                          |
+|-----|-------------------------------------|--------------------------------------|
+| 01  | Bài 1: Thẻ HTML cơ bản              | Sử dụng thẻ `<p>`, `<h1>`, `<ul>`, `<table>` để tạo cấu trúc |
+| ... | ...                                 | ...                                  |
