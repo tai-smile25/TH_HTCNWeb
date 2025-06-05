@@ -1,8 +1,8 @@
 # TH_HTCNWeb
 
-📚 **Repository này lưu trữ các bài thực hành trong môn Hệ Thống Công Nghệ Web**
-👨‍💻 **Tác giả:** TranHuuTai
-🗓️ **Học kỳ:** Học kỳ 3 năm 2025
+📚 **Repository này lưu trữ các bài thực hành trong môn Hệ Thống Công Nghệ Web**  
+👨‍💻 **Tác giả:** TranHuuTai  
+🗓️ **Học kỳ:** Học kỳ 3 năm 2025  
 
 ## 📖 Giới thiệu
 
