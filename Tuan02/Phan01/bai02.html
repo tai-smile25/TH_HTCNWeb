@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Các môn học yêu thích</title>
+    <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+      padding: 40px;
+    }
+
+    ul {
+      background-color: #ffffff;
+      max-width: 400px;
+      margin: auto;
+      padding: 20px 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      list-style-type: none;
+    }
+
+    ul::before {
+      content: "Các môn học yêu thích";
+      display: block;
+      font-size: 20px;
+      font-weight: bold;
+      margin-bottom: 15px;
+      color: #2c3e50;
+    }
+
+    li {
+      padding: 10px 15px;
+      margin-bottom: 8px;
+      border-radius: 6px;
+      transition: background-color 0.3s ease;
+    }
+
+    li:nth-child(1) { background-color: #e3f2fd; }
+    li:nth-child(2) { background-color: #e8f5e9; }
+    li:nth-child(3) { background-color: #fff3e0; }
+    li:nth-child(4) { background-color: #fce4ec; }
+
+    li:hover {
+      background-color: #d1c4e9;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+    <ul>Các môn học yêu thích
+    <li>Toán học</li>
+    <li>Tiếng Anh</li>
+    <li>Khoa học máy tính</li>
+    <li>Hệ thống công nghệ Web</li>
+</ul>
+
+</body>
+</html>
