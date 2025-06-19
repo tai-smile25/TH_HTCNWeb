@@ -1,67 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Form đăng nhập</title>
     <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #f0f0f0;
-      padding: 50px;
-    }
-    .login-form {
-      max-width: 400px;
-      margin: auto;
-      background-color: #fff;
-      padding: 20px;
-      border-radius: 8px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    }
-    .login-form h2 {
-      text-align: center;
-      margin-bottom: 20px;
-    }
-    .login-form label {
-      display: block;
-      margin-bottom: 5px;
-      font-weight: bold;
-    }
-    .login-form input[type="text"],
-    .login-form input[type="password"] {
-      width: 100%;
-      padding: 8px;
-      margin-bottom: 15px;
-      border-radius: 4px;
-      border: 1px solid #ccc;
-    }
-    .login-form button {
-      width: 100%;
-      padding: 10px;
-      background-color: #007BFF;
-      color: white;
-      border: none;
-      border-radius: 4px;
-      font-size: 16px;
-      cursor: pointer;
-    }
-    .login-form button:hover {
-      background-color: #0056b3;
-    }
-  </style>
-</head>
-<body>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f0f0f0;
+        padding: 50px;
+      }
+      .login-form {
+        max-width: 400px;
+        margin: auto;
+        background-color: #27efe8;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 10px 20px rgba(192, 11, 11, 0.515);
+      }
+      .login-form h2 {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+      .login-form label {
+        display: block;
+        margin-bottom: 5px;
+        font-weight: bold;
+      }
+      .login-form input[type="text"],
+      .login-form input[type="password"] {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 15px;
+        border-radius: 10px;
+        border: 1px solid #fa7f0c;
+      }
+      .login-form button {
+        width: 100%;
+        padding: 10px;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        font-size: 16px;
+        cursor: pointer;
+      }
+      .login-form button:hover {
+        background-color: #b30000;
+      }
+      
+    </style>
+  </head>
+  <body>
     <div class="login-form">
-    <h2>Đăng Nhập</h2>
-    <form action="#" method="post">
-      <label for="username">Tên đăng nhập:</label>
-      <input type="text" id="username" name="username" required>
-      
-      <label for="password">Mật khẩu:</label>
-      <input type="password" id="password" name="password" required>
-      
-      <button type="submit">Đăng Nhập</button>
-    </form>
-  </div>
-</body>
+      <h2>Đăng Nhập</h2>
+      <form action="#" method="post">
+        <label for="username">Tên đăng nhập:</label>
+        <input type="text" id="username" name="username" required />
+
+        <label for="password">Mật khẩu:</label>
+        <input type="password" id="password" name="password" required />
+
+        <button type="submit">Đăng Nhập</button>
+      </form>
+    </div>
+  </body>
 </html>
