@@ -18,4 +18,5 @@ Repository này chứa các bài thực hành của môn **Hệ Thống Công Ng
 | STT | Tên bài thực hành                  | Mô tả ngắn                          |
 |-----|-------------------------------------|--------------------------------------|
 | 01  | Tuần 1: Thẻ HTML cơ bản              | Sử dụng thẻ `<p>`, `<h1>`, `<ul>`, `<table>` để tạo cấu trúc |
+| 02  | Tuần 2: HTML + CSS cơ bản             | Làm quen với CSS, định dạng văn bản, màu sắc, căn lề, kích thước, ảnh    |
 | ... | ...                                 | ...                                  |
