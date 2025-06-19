@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form gửi phản hồi khách hàng</title>
+    <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+      padding: 20px;
+    }
+    .feedback-form {
+      max-width: 500px;
+      margin: auto;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .feedback-form h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .feedback-form label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+    .feedback-form input[type="email"],
+    .feedback-form textarea,
+    .feedback-form select {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 15px;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+    }
+    .feedback-form button {
+      width: 100%;
+      padding: 10px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    .feedback-form button:hover {
+      background-color: #0069d9;
+    }
+  </style>
+</head>
+
+<body>
+    <div class="feedback-form">
+    <h2>Gửi Phản Hồi Khách Hàng</h2>
+    <form action="#" method="post">
+      
+      <label for="rating">Đánh giá sao:</label>
+      <select id="rating" name="rating" required>
+        <option value="">--Chọn số sao--</option>
+        <option value="1">1 sao</option>
+        <option value="2">2 sao</option>
+        <option value="3">3 sao</option>
+        <option value="4">4 sao</option>
+        <option value="5">5 sao</option>
+      </select>
+      
+      <label for="comments">Ý kiến của bạn:</label>
+      <textarea id="comments" name="comments" rows="4" placeholder="Nhập ý kiến của bạn..." required></textarea>
+      
+      <label for="email">Email của bạn:</label>
+      <input type="email" id="email" name="email" placeholder="Nhập email của bạn" required>
+      
+      <button type="submit">Gửi Phản Hồi</button>
+      
+    </form>
+  </div>
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form khảo sát</title>
+    <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+      padding: 20px;
+    }
+    .survey-form {
+      max-width: 600px;
+      margin: auto;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .survey-form h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .survey-form label {
+      font-weight: bold;
+    }
+    .survey-form .form-group {
+      margin-bottom: 15px;
+    }
+    .survey-form button {
+      background-color: #3b7dd2;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+    .survey-form button:hover {
+      background-color: #1687d7;
+    }
+  </style>
+</head>
+<body>
+    <div class="survey-form">
+    <h2>Khảo Sát Ý Kiến Người Dùng</h2>
+    <form action="#" method="post">
+      
+      <div class="form-group">
+        <label>Bạn có hài lòng với sản phẩm của chúng tôi không?</label><br>
+        <input type="radio" id="satisfied" name="satisfaction" value="yes">
+        <label for="satisfied">Có</label><br>
+        <input type="radio" id="not-satisfied" name="satisfaction" value="no">
+        <label for="not-satisfied">Không</label>
+      </div>
+      
+      <div class="form-group">
+        <label>Bạn thích những tính năng nào? (Chọn nhiều)</label><br>
+        <input type="checkbox" id="feature1" name="features" value="Tính năng A">
+        <label for="feature1">Tính năng A</label><br>
+        <input type="checkbox" id="feature2" name="features" value="Tính năng B">
+        <label for="feature2">Tính năng B</label><br>
+        <input type="checkbox" id="feature3" name="features" value="Tính năng C">
+        <label for="feature3">Tính năng C</label>
+      </div>
+      
+      <div class="form-group">
+        <label>Bạn đánh giá sản phẩm của chúng tôi ở mức độ nào?</label><br>
+        <select name="rating" id="rating">
+          <option value="5">5 - Rất tốt</option>
+          <option value="4">4 - Tốt</option>
+          <option value="3">3 - Trung bình</option>
+          <option value="2">2 - Kém</option>
+          <option value="1">1 - Rất kém</option>
+        </select>
+      </div>
+      
+      <div class="form-group">
+        <label>Ý kiến đóng góp của bạn:</label><br>
+        <textarea name="comments" id="comments" rows="4" cols="50" placeholder="Nhập ý kiến của bạn..."></textarea>
+      </div>
+      
+      <div class="form-group">
+        <button type="submit">Gửi Khảo Sát</button>
+      </div>
+      
+    </form>
+  </div>
+</body>
+</html>
