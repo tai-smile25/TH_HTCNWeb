@@ -2,7 +2,7 @@
 
 📚 **Repository này lưu trữ các bài thực hành trong môn Hệ Thống Công Nghệ Web**  
  
-🗓️ **Học kỳ:** Học kỳ 3 năm 2025  
+🗓️ **Học kỳ:** 3 năm 2025  
 
 ## 📖 Giới thiệu
 
