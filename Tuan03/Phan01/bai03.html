@@ -3,46 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Thời khóa biểu</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #09e8f8;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+        }
+        .schedule{
+            display: grid;
+            grid-template-columns: 1fr 2fr 2fr 1.5fr;
+            gap: 1px;
+            background-color: #47ee10;
+            border-radius: 10px;
+            width: 100%;
+        }
+        .schedule div {
+            padding: 10px;
+            text-align: center;
+            border: 2px solid #000;
+        }
+        .schedule .header {
+            background-color: #095cf5;
+            font-weight: bold;
+            color: aliceblue;
+        }
+        @media (max-width: 600px) {
+            .schedule {
+                font-size: 15px;
+            }
+        }
+
+
+    </style>
 </head>
 <body>
-    <table border="1">
-    <thead>
-        <tr>
-            <th>Thứ</th>
-            <th>Môn học</th>
-            <th>Giờ học</th>
-            <th>Phòng học</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>Thứ Hai</td>
-            <td>Toán học</td>
-            <td>7:00 - 8:30</td>
-            <td>Phòng A1</td>
-        </tr>
-        <tr>
-            <td>Thứ Ba</td>
-            <td>Tiếng Anh</td>
-            <td>8:45 - 10:15</td>
-            <td>Phòng B2</td>
-        </tr>
-        <tr>
-            <td>Thứ Tư</td>
-            <td>Khoa học máy tính</td>
-            <td>10:30 - 12:00</td>
-            <td>Phòng B3</td>
-        </tr>
-        <tr>
-            <td>Thứ Năm</td>
-            <td>Hệ thống công nghệ Web</td>
-            <td>13:30 - 15:00</td>
-            <td>Phòng H4</td>
-        </tr>
-    </tbody>
-</table>
+    <div class="schedule">
 
+    <div class="header">Thứ</div>
+    <div class="header">Môn học</div>
+    <div class="header">Giờ học</div>
+    <div class="header">Phòng học</div>
+
+
+    <div>Thứ Hai</div>
+    <div>Toán học</div>
+    <div>7:00 - 8:30</div>
+    <div>Phòng A1</div>
+
+    <div>Thứ Ba</div>
+    <div>Tiếng Anh</div>
+    <div>8:45 - 10:15</div>
+    <div>Phòng B2</div>
+
+    <div>Thứ Tư</div>
+    <div>Khoa học máy tính</div>
+    <div>10:30 - 12:00</div>
+    <div>Phòng B3</div>
+
+    <div>Thứ Năm</div>
+    <div>Hệ thống công nghệ Web</div>
+    <div>13:30 - 15:00</div>
+    <div>Phòng H4</div>
+  </div>
 
 </body>
 </html>
