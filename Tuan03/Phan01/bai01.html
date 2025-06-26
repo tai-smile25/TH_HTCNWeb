@@ -3,16 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Trang giới thiệu</title>
 </head>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f0f0f0;
+        color: #333;
+        margin: 0;
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: aqua;
+
+        
+    }
+    .container {
+      background-color: white;
+      border-radius: 10px;
+      padding: 30px;
+      max-width: 800px;
+      width: 100%;
+      box-shadow: 0 10px 20px rgba(224, 11, 11, 0.1);
+      display: flex;
+      flex-direction: row;
+      gap: 30px;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    h1 {
+        color: #f1ca0a;
+    }
+    profile-img {
+        width: 200px;
+        height: 300px;
+        border-radius: 10px;
+        box-shadow: 0 5px 10px rgba(196, 8, 8, 0.1);
+    }
+    p {
+        line-height: 1.6;
+    }
+    img {
+        border-radius: 10px;
+        box-shadow: 0 2px 5px rgba(225, 43, 43, 0.1);
+    }
+</style>
 <body>
-    <h1>trang giới thiệu bản thân</h1>
-    <p>Họ tên: Trần Hữu Tài</p>
-    <p>Ngày sinh: 22/05/2003</p>
-    <p>Ảnh đại diện: </p>
-    <img src="https://picsum.photos/seed/picsum/200/300" alt="Ảnh đại diện" height="200" width="200">
-    <p>Sở thích: thích chơi game, thích đọc sách</p>
-    <p>Mô tả ngắn: có khả năng làm việc nhóm tốt, có trách nhiệm để hoàn thành công việc một cách hiệu quả.</p>
+    <div class="container">
+    <h1>Trang giới thiệu bản thân</h1>
+    <img class="profile-img" src="https://picsum.photos/seed/picsum/200/300" alt="Ảnh đại diện">
+    <div class="info">
+      
+      <p><strong>Họ tên:</strong> Trần Hữu Tài</p>
+      <p><strong>Ngày sinh:</strong> 22/05/2003</p>
+      <p><strong>Sở thích:</strong> Thích chơi game, thích đọc sách</p>
+      <p><strong>Mô tả ngắn:</strong> Có khả năng làm việc nhóm tốt, có trách nhiệm để hoàn thành công việc một cách hiệu quả.</p>
+    </div>
+  </div>
 
 </body>
 </html>
