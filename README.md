@@ -19,4 +19,5 @@ Repository này chứa các bài thực hành của môn **Hệ Thống Công Ng
 |-----|-------------------------------------|--------------------------------------|
 | 01  | Tuần 1: Thẻ HTML cơ bản              | Sử dụng thẻ `<p>`, `<h1>`, `<ul>`, `<table>` để tạo cấu trúc |
 | 02  | Tuần 2: HTML + CSS cơ bản             | Làm quen với CSS, định dạng văn bản, màu sắc, căn lề, kích thước, ảnh    |
+| 03  | Tuần 3: HTML + CSS cơ bản + Flexbox/Grid | Sử dụng Flexbox và CSS Grid để bố trí layout, canh giữa, chia cột, responsive trên nhiều kích thước màn hình |
 | ... | ...                                 | ...                                  |
