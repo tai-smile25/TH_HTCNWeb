@@ -3,14 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Môn học yêu thích</title>
 </head>
+<style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+      padding: 40px;
+      text-align: center;
+    }
+    h2 {
+      margin-bottom: 30px;
+    }
+    .subject-list{
+        display: flex;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        list-style-type: none;
+        gap: 20px;
+        padding: 0;
+        max-width: 800px;
+        margin: 0 auto;
+    }
+    .subject-list li{
+        background-color: aqua;
+        border: 2px solid #e12e2e;
+        border-radius: 10px;
+        padding: 20px;
+        box-shadow: 0 5px 10px rgba(13, 234, 32, 0.941);
+        transition: transform 0.3s;
+    }
+    .subject-list li:hover {
+        background-color: #103de2;
+        color: white;
+    }
+
+</style>
+
 <body>
-    <ul>Các môn học yêu thích
+    <h2>Các môn học yêu thích</h2>
+
+  <ul class="subject-list">
     <li>Toán học</li>
     <li>Tiếng Anh</li>
     <li>Khoa học máy tính</li>
     <li>Hệ thống công nghệ Web</li>
+    <li>Lập trình ứng dụng</li>
+    <li>Phát triển phần mềm</li>
+  </ul>
 </ul>
 
 </body>
