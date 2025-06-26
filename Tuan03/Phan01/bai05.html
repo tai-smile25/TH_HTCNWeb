@@ -1,18 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <ul> Các tranh tham khảo
-    <li><a href="trangchu.html" target="_self">Trang Chủ</a></li>
-    <li><a href="https://www.w3schools.com/html/default.asp" target="_blank">Học HTML w3schools</a></li>
-    <li><a href="https://www.w3schools.com/css/default.asp" target="_self">Học CSS w3schools</a></li>
-    <li><a href="https://www.w3schools.com/js/default.asp" target="_self">Học JavaScirpt w3schools</a></li>
-</ul>
-
-
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LK điều hướng</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f0f0f0;
+        padding: 20px;
+        text-align: center;
+      }
+      ul {
+        list-style-type: none;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+      }
+      li a {
+        text-decoration: none;
+        color: #333;
+        margin: 10px 0;
+        font-size: 15px;
+        border-radius: 3px;
+      }
+      li a:hover {
+        color: #007bff;
+      }
+      li a:active {
+        text-decoration: underline;
+      }
+      @media (max-width: 600px) {
+        ul {
+          flex-direction: column;
+          align-items: center;
+          gap: 15px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <ul>
+      Các tranh tham khảo
+      <li><a href="trangchu.html" target="_self">Trang Chủ</a></li>
+      <li>
+        <a href="https://www.w3schools.com/html/default.asp" target="_blank"
+          >Học HTML w3schools</a
+        >
+      </li>
+      <li>
+        <a href="https://www.w3schools.com/css/default.asp" target="_self"
+          >Học CSS w3schools</a
+        >
+      </li>
+      <li>
+        <a href="https://www.w3schools.com/js/default.asp" target="_self"
+          >Học JavaScirpt w3schools</a
+        >
+      </li>
+    </ul>
+  </body>
 </html>
