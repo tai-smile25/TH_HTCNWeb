@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check Input</title>
+</head>
+<body>
+    <input type="text" id="nameInput" placeholder="Enter your name" />
+    <button onclick="submit()">Submit</button>
+
+    <script>
+        function submit() {
+            const name = document.getElementById('nameInput').value;
+            if (name) {
+                alert(`Hello ${name}`);
+            } else {
+                alert('Please enter your name.');
+            }
+        }
+    </script>
+
+</body>
+</html>

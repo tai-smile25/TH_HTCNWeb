@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check is number or string</title>
+</head>
+<body>
+    <input type="text" id="inputValue" placeholder="Enter a value" />
+    <button onclick="checkValue()">Check</button>
+
+    <p id="result"></p>
+
+    <script>
+        function checkValue() {
+            const value = document.getElementById('inputValue').value;
+            const resultElement = document.getElementById('result');
+            if (value === '') {
+                resultElement.innerText = 'Please enter a value.';
+                return;
+            }
+            if (!isNaN(value) && value.trim() !== '') {
+                resultElement.innerText = `${value} is a number.`;
+            } else {
+                resultElement.innerText = `${value} is a string.`;
+            }
+        }
+    </script>
+    
+</body>
+</html>
