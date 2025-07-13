@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CheckInfo</title>
+</head>
+<body>
+    <input type="text" id="value" placeholder="Enter 12 number" /><br><br>
+    <input type="text" id="name" placeholder="Ho va Ten" /><br><br>
+    <input type="text" id="birth" placeholder="Ngay sinh: dd-mm-yyyy"/><br><br>
+    <input type="text" id="address" placeholder="Dia chi" /><br> <br>
+
+    <button onclick="checkInfo()">CheckInfo</button>
+    <br><br>
+    <p id="result"></p>
+
+    <script>
+        function checkInfo() {
+            const value = document.getElementById('value').value.trim();
+            const name = document.getElementById('name').value.trim();
+            const birth = document.getElementById('birth').value.trim();
+            const address = document.getElementById('address').value.trim();
+
+            const resultElement = document.getElementById('result');
+
+            if (value === '' || name === '' || birth === '' || address === '') {
+                resultElement.innerText = 'Please fill in all fields.';
+                return;
+            }
+
+            const isValidNumber = (str) => /^\d{12}$/.test(str);
+            const isValidName = (str) => /^[A-Za-z\s]+$/.test(str);
+            const isValidBirth = (str) => /^\d{2}-\d{2}-\d{4}$/.test(str);
+            const isValidAddress = (str) => /^[A-Za-z0-9\s]+$/.test(str);
+
+            if (!isValidNumber(value)) {
+                resultElement.innerText = 'Error: Ma so can cuoc cong dan phai la 12 chu so.';
+                return;
+            }
+            if (!isValidName(name)) {
+                resultElement.innerText = 'Error: Ho va ten chi chua chu cai va khoang trang.';
+                return;
+            }
+            if (!isValidBirth(birth)) {
+                resultElement.innerText = 'Error: Ngay sinh phai theo dinh dang dd-mm-yyyy.';
+                return;
+            }
+            if (!isValidAddress(address)) {
+                resultElement.innerText = 'Error: Dia chi chua so, chu cai va khoang trang.';
+                return;
+            }
+
+            resultElement.innerText = 'Thong tin hop le!';
+        }
+    </script>
+
+</body>
+</html>

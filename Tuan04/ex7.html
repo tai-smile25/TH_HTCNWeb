@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check 10 number</title>
+</head>
+<body>
+    <input type="text" id="value" placeholder="Enter 10 number" />
+    <button onclick="checkNumber()">Check</button>
+
+    <p id="result"></p>
+
+    <script>
+        function checkNumber() {
+            const value = document.getElementById('value').value.trim();
+            const resultElement = document.getElementById('result');
+
+            if (value === '') {
+                resultElement.innerText = 'Please enter 10 numbers.';
+                return;
+            }
+
+            const isTenDigits = (str) => /^\d{10}$/.test(str);
+
+            if (!isTenDigits(value)) {
+                resultElement.innerText = 'Error: Input must be  10 numbers.';
+                return;
+            }
+            resultElement.innerText = 'Valid number format!';
+        }
+    </script>
+    
+</body>
+</html>

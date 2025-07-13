@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UpadateEx3</title>
+</head>
+<body>
+    <input type="text" id="num1" placeholder="Enter number 1" />
+    <input type="text" id="num2" placeholder="Enter number 2" />
+    <button onclick="calculateSum()">Sum</button>
+
+    <p id="result"></p>
+
+    <script>
+        function calculateSum() {
+            const num1Value = document.getElementById('num1').value.trim();
+            const num2Value = document.getElementById('num2').value.trim();
+
+            const num1 = parseFloat(num1Value);
+            const num2 = parseFloat(num2Value);
+
+            const resultElement = document.getElementById('result');
+
+            if (num1Value === '' || num2Value === '') {
+                resultElement.innerText = 'Please enter numbers.';
+                return;
+            }
+
+            if (isNaN(num1) || isNaN(num2)) {
+                resultElement.innerText = 'Error: Please enter only numbers.';
+                return;
+            }
+
+            resultElement.innerText = `Sum = ${num1 + num2}`;
+            resultElement.className = '';
+        }
+    </script>
+</body>
+</html>

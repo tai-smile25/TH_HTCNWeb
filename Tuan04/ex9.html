@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check 09XXXXXXXX</title>
+</head>
+<body>
+    <input type="text" id="value" placeholder="Enter 09XXXXXXXX" />
+    <button onclick="checkNumber()">Check</button>
+
+    <p id="result"></p>
+
+    <script>
+        function checkNumber() {
+            const value = document.getElementById('value').value.trim();
+            const resultElement = document.getElementById('result');
+
+            if (value === '') {
+                resultElement.innerText = 'Please enter 09XXXXXXXX.';
+                return;
+            }
+
+            const isTenDigits = (str) => /^09\d{8}$/.test(str);
+
+            if (!isTenDigits(value)) {
+                resultElement.innerText = 'Error: Input must be  09XXXXXXXX.';
+                return;
+            }
+            resultElement.innerText = 'Number mobile format!';
+        }
+    </script>
+    
+</body>
+</html>

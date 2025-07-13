@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check Ma Nhan Vien</title>
+</head>
+<body>
+    <input type="text" id="value" placeholder="Enter FPT-XXXXXX" />
+    <button onclick="checkNumber()">Check</button>
+
+    <p id="result"></p>
+
+    <script>
+        function checkNumber() {
+            const value = document.getElementById('value').value.trim();
+            const resultElement = document.getElementById('result');
+
+            if (value === '') {
+                resultElement.innerText = 'Please enter FPT-XXXXXX.';
+                return;
+            }
+
+            const isTenDigits = (str) => /^FPT-\d{6}$/.test(str);
+
+            if (!isTenDigits(value)) {
+                resultElement.innerText = 'Error: Input must be  FPT-XXXXXX.';
+                return;
+            }
+            resultElement.innerText = 'Valid format!';
+        }
+    </script>
+    
+</body>
+</html>

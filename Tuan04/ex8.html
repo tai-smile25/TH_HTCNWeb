@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CheckNumber dang 024-XXXXXXX</title>
+</head>
+<body>
+    <input type="text" id="value" placeholder="Enter 024-XXXXXXX" />
+    <button onclick="checkNumber()">Check</button>
+
+    <p id="result"></p>
+
+    <script>
+        function checkNumber() {
+            const value = document.getElementById('value').value.trim();
+            const resultElement = document.getElementById('result');
+
+            if (value === '') {
+                resultElement.innerText = 'Please enter 024-XXXXXXX.';
+                return;
+            }
+
+            const isValidDang024 = (str) => /^024-\d{7}$/.test(str);
+
+            if (!isValidDang024(value)) {
+                resultElement.innerText = 'Error: Input must be in the format 024-XXXXXXX.';
+                return;
+            }
+
+            resultElement.innerText = 'Valid number format!';
+        }
+    </script>
+    
+</body>
+</html>
