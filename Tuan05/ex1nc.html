@@ -6,6 +6,30 @@
     <title>Check Number</title>
 </head>
 <body>
+    <input type="text" id="inputField" placeholder="Enter some things">
+    <button id="btnCheck">Check</button>
     
+    <p id="result"></p>
+    <script>
+        document.getElementById('btnCheck').onclick = function() {
+            const input = document.getElementById('inputField').value;
+            const output = document.getElementById('result');
+            output.innerText = '';
+            const number = /^\d+$/;
+
+            if (input === '') {
+                output.innerText = 'Please enter some things.';
+                return;
+            }
+            if (number.test(input)) {
+                output.innerText = `Success.`;
+                output.style.color = 'green';
+            } 
+            else {
+                output.innerText = `Error.`;
+                output.style.color = 'red';
+            }
+        };
+    </script>
 </body>
 </html>
