@@ -6,6 +6,32 @@
     <title>Check Phone</title>
 </head>
 <body>
-    
+    <input type="text" id="inputField" placeholder="Enter 10 numbers: 0XXXXXXXXX">
+    <button id="btnCheck">Check</button>
+
+    <p id="result"></p>
+
+    <script>
+        document.getElementById('btnCheck').onclick = function() {
+            const input = document.getElementById('inputField').value;
+            const output = document.getElementById('result');
+            output.innerText = '';
+            const phonePattern = /^0\d{9}$/;
+            if (input === '') {
+                output.innerText = 'Please enter phone number.';
+                output.style.color = 'red';
+                return;
+            }
+            if (phonePattern.test(input)) {
+                output.innerText = `Success.`;
+                output.style.color = 'green';
+            } 
+            else {
+                output.innerText = `Error. Nhập lại theo dạng 10 numbers: 0XXXXXXXXX.`;
+                output.style.color = 'red';
+            }
+        };
+    </script>
+
 </body>
 </html>
