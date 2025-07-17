@@ -14,10 +14,24 @@
 
     <script>
         document.getElementById('btnSum').onclick = function() {
-            const num1 = parseFloat(document.getElementById('num1').value);
-            const num2 = parseFloat(document.getElementById('num2').value);
+            const num1Value = document.getElementById('num1').value;
+            const num2Value = document.getElementById('num2').value;
+
+            const num1 = parseFloat(num1Value);
+            const num2 = parseFloat(num2Value);
+
             const output = document.getElementById('result');
             output.innerText = '';
+
+            if(num1Value === '' || num2Value === '' ) {
+                output.innerText = 'Chưa nhập số.';
+                return;
+            }
+
+            if(isNaN(num1) || isNaN(num2)) {
+                output.innerText = 'Bạn nhập không phải số.';
+                return;
+            }
 
             const sum = num1 + num2;
             console.log(`${num1} + ${num2} = ${sum}`);
