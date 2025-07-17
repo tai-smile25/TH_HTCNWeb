@@ -6,6 +6,28 @@
     <title>Check Number or Text</title>
 </head>
 <body>
+    <input type="text" id="inputField" placeholder="Enter some things">
+    <button id="btnCheck">Check</button>
+    
+    <p id="result"></p>
+    <script>
+        document.getElementById('btnCheck').onclick = function() {
+            const input = document.getElementById('inputField').value;
+            const output = document.getElementById('result');
+            output.innerText = '';
+            const number = /^\d+$/;
+            const text = /^[1-9 a-z A-Z\s]+$/;
+            if (input === '') {
+                output.innerText = 'Please enter some things.';
+                return;
+            }
+            if (number.test(input)) {
+                output.innerText = `Bạn mới vừa nhập số: ${input}.`;
+            } else if (text.test(input)) {
+                output.innerText = `Bạn mới vừa nhập text: ${input}.`;
+            }
+        };
+    </script>
     
 </body>
 </html>
