@@ -6,6 +6,17 @@
     <title>Display Hello name</title>
 </head>
 <body>
+    <input type="text" id="nameInput" placeholder="Enter your name">
+    <button id="btnConsoleHello">Display Hello</button>
+    
+    <p id="result">    </p>
+    <script>
+        document.getElementById('btnConsoleHello').onclick = function() {
+            const name = document.getElementById('nameInput').value;
+            console.log(`Hello ${name}`);
+            document.getElementById('result').innerText = `Hello ${name}`;
+       }; 
+    </script>
     
 </body>
 </html>
