@@ -21,5 +21,5 @@ Repository này chứa các bài thực hành của môn **Hệ Thống Công Ng
 | 02  | Tuần 2: HTML + CSS cơ bản             | Làm quen với CSS, định dạng văn bản, màu sắc, căn lề, kích thước, ảnh    |
 | 03  | Tuần 3: HTML + CSS cơ bản + Flexbox/Grid | Sử dụng Flexbox và CSS Grid để bố trí layout, canh giữa, chia cột, responsive trên nhiều kích thước màn hình |
 | 04  | Tuần 4: JS cơ bản  |  Sử dụng JS cơ bản để làm các bài toán nhỏ  | 
-| 05  | Tuần 5: JS, regex  |  Sử dụng JS, regex để làm các bài tập   |
+| 05  | Tuần 5: JS + regex  |  Sử dụng JS, regex để làm các bài tập   |
 | ... | ...                                 | ...                                  |
