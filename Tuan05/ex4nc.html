@@ -6,6 +6,32 @@
     <title>Check Date</title>
 </head>
 <body>
+    <input type="text" id="inputDate" placeholder="Enter date (dd/mm/yyyy)">
+    <button id="btnCheck">Check</button>
+
+    <p id="result"></p>
+
+    <script>
+        document.getElementById('btnCheck').onclick = function() {
+            const inputDate = document.getElementById('inputDate').value;
+            const output = document.getElementById('result');
+            output.innerText = '';
+            const datePattern = /^(0[1-9]|[12][0-9]|3[01])\/(0[1-9]|1[0-2])\/(\d{4})$/;
+
+            if (inputDate === '') {
+                output.innerText = 'Please enter a date.';
+                output.style.color = 'red';
+                return;
+            }
+            if (datePattern.test(inputDate)) {
+                output.innerText = `Success.`;
+                output.style.color = 'green';
+            } else {
+                output.innerText = `Error. Nhập lại theo dạng dd/mm/yyyy.`;
+                output.style.color = 'red';
+            }
+        };
+    </script>
     
 </body>
 </html>
