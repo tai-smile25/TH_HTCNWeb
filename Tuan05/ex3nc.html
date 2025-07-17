@@ -6,6 +6,55 @@
     <title>KetHopBai</title>
 </head>
 <body>
+    <input type="text" id="inputNumber" placeholder="Enter some things"><br><br>
+    <input type="text" id="inputPhone" placeholder="Enter 10 numbers: 0XXXXXXXXX"><br><br>
+    <button id="btnCheck">Check</button>
+    
+    <p id="result"></p>
+    <p id="resultNumber"></p>
+    <p id="resultPhone"></p>
+
+    <script>
+        document.getElementById('btnCheck').onclick = function() {
+            const inputNumber = document.getElementById('inputNumber').value;
+            const inputPhone = document.getElementById('inputPhone').value;
+            const output = document.getElementById('result');
+            const outputNumber = document.getElementById('resultNumber');
+            const outputPhone = document.getElementById('resultPhone');
+
+            output.innerText = '';
+            outputNumber.innerText = '';
+            outputPhone.innerText = '';
+
+            const number = /^\d+$/;
+            const phone = /^0\d{9}$/;
+
+            if (inputNumber === '') {
+                output.innerText = 'Please enter some things.';
+                output.style.color = 'red';
+                return;
+            }
+            if (inputPhone === '') {
+                output.innerText = 'Please enter phone number.';
+                output.style.color = 'red';
+                return;
+            }
+            if (number.test(inputNumber)) {
+                outputNumber.innerText = `Success Number.`;
+                outputNumber.style.color = 'green';
+            } else {
+                outputNumber.innerText = `Error Number.`;
+                outputNumber.style.color = 'red';
+            }
+            if (phone.test(inputPhone)) {
+                outputPhone.innerText = `Success Phone.`;
+                outputPhone.style.color = 'green';
+            } else {
+                outputPhone.innerText = `Error Phone. Nhập lại theo dạng 10 numbers: 0XXXXXXXXX.`;
+                outputPhone.style.color = 'red';
+            }
+        };
+    </script>
     
 </body>
 </html>
