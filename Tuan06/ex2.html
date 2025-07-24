@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Before or After Today</title>
+</head>
+
+<body>
+    <input type="date" id="inputDate">
+    <button id="btnCheck">CheckDate</button>
+
+    <p id="result"> </p>
+
+    <script>
+        var btnCheck = document.getElementById("btnCheck");
+        var inputDate = document.getElementById("inputDate");
+        var result = document.getElementById("result");
+
+        btnCheck.onclick = () => {
+            var input = inputDate.value;
+            if (!input) {
+                result.innerText = "Vui long chon ngay."
+                return;
+            }
+            var myDate = new Date(inputDate.value);
+            myDate.setHours(0, 0, 0, 0);
+            console.log(`Ngay chon: ${myDate}`);
+
+            var today = new Date();
+            today.setHours(0, 0, 0, 0);
+            console.log(`Ngay hom nay: ${today}`);
+
+            if (myDate < today) {
+                result.innerText = "Truoc ngay hien tai.";
+                result.style.color = "green";
+            } else if (myDate > today) {
+                result.innerText = "Sau ngay hien tai.";
+                result.style.color = "red";
+            } else {
+                result.innerText = "La ngay hien tai."
+                result.style.color = "green";
+            }
+
+        }
+    </script>
+
+</body>
+
+</html>
