@@ -17,6 +17,11 @@
         var btnPrint = document.getElementById("btnPrint");
         var inputDate = document.getElementById("inputDate");
         var result = document.getElementById("result");
+
+        btnPrint.onclick = () => {
+            var myDate = new Date(inputDate.value);
+            console.log(myDate);
+        }
     </script>
 
 </body>
