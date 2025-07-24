@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check BirthDate</title>
+</head>
+
+<body>
+    <input id="inputDate" type="date">
+    <button id="btnCheck">Check</button>
+    <p id="result"> </p>
+
+    <script>
+        var btnCheck = document.getElementById("btnCheck");
+        var inputDate = document.getElementById("inputDate");
+        var result = document.getElementById("result");
+
+        btnCheck.onclick = () => {
+            var input = inputDate.value;
+            if (!input) {
+                result.innerText = "Vui long chon ngay sinh nhat."
+                return;
+            }
+            var birthDay = new Date(inputDate.value);
+            birthDay.setHours(0, 0, 0, 0);
+            console.log(`Ngay sinh nhat: ${birthDay}`);
+
+            var today = new Date();
+            today.setHours(0, 0, 0, 0);
+            console.log(`Ngay hom nay: ${today}`);
+
+            var currentYear = today.getFullYear();
+            var birthDayThisYear = new Date(currentYear, birthDay.getMonth(), birthDay.getDate());
+            birthDayThisYear.setHours(0, 0, 0, 0);
+
+            if (birthDay < today) {
+                result.innerText = "Da qua sinh nhat.";
+                result.style.color = "green";
+            } else if (birthDay > today) {
+                result.innerText = "Chua den sinh nhat.";
+                result.style.color = "red";
+            } else {
+                result.innerText = "Hom nay la sinh nhat. Chuc mung."
+                result.style.color = "green";
+            }
+        }
+    </script>
+
+</body>
+
+</html>
